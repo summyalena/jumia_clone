@@ -1,0 +1,119 @@
+@import "globals.css";
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.rounded {
+  border-radius: 50%;
+}
+
+.grid,
+.grid-1 {
+  display: grid;
+}
+
+.gap-lg {
+  gap: 2rem;
+}
+
+.gap-md {
+  gap: 1.5rem;
+}
+
+.gap-sm {
+  gap: 1rem;
+}
+
+.gap-xs {
+  gap: 0.5rem;
+}
+
+.padding-sm-all {
+  padding: 1rem;
+}
+
+.padding-md-all {
+  padding: 1.5rem;
+}
+
+.padding-lg-all {
+  padding: 2rem;
+}
+
+.padding-sm-y {
+  padding-block: 1rem;
+}
+
+.padding-md-y {
+  padding-block: 1.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-y {
+  align-items: center;
+}
+
+.align-x {
+  justify-content: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.mySwiper {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: var(--background-color);
+}
+
+
+.mySwiper:hover {
+  opacity: 1;
+  transition-delay: 3s;
+ }
+ 
+
+.next {
+  position: absolute;
+  top: 100px;
+  right: 4%;
+}
+
+.prev {
+  position: absolute;
+  top: 100px;
+  left: 4%;
+}
+
+.margin-y {
+  margin-block: 1rem;
+}
+
+.margin-yl {
+  margin-block: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .grid-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flex-row {
+    flex-direction: row;
+  }
+}
