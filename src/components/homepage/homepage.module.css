@@ -1,0 +1,212 @@
+.slider {
+  width: 80%;
+}
+
+.phone1container {
+  background-color: var(--background-color);
+}
+
+.slidecard > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.links > ul {
+  background-color: var(--background-color);
+  padding: 3rem;
+  box-shadow: 0.2px 0.2px 0.9px 0px rgba(0, 0, 0, 0.3);
+}
+
+.herocontainer {
+  justify-content: space-evenly;
+}
+
+.catgoriescontainer {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  overflow: hidden;
+}
+
+.category img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.catgoriescontainer h2 {
+  font-size: var(--heading-6);
+  font-weight: var(--medium);
+}
+
+.heading {
+  background-color: rgba(238, 159, 80, 0.836);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  padding: 0.6rem;
+  color: black;
+  justify-content: space-between;
+}
+
+.heading h2 {
+  font-size: 1rem;
+}
+
+.stockcontainer {
+  margin-block: 3rem;
+}
+
+.seeheading {
+  background-color: rgba(238, 159, 80, 0.836);
+  color: black;
+}
+
+.grid,
+.collectiongrid {
+  background-color: var(--background-color);
+  padding: 1rem;
+  display: grid;
+  margin-block-start: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 0.7fr));
+  box-shadow: 0.9px 2px 80px 0px rgba(0, 0, 0, 0.3);
+}
+
+.collectiongrid {
+  margin-block-start: 0;
+}
+
+.bestpricecontainer div:last-child,
+.appliancetwogrid,
+.topappliance div:last-child {
+  padding-block-start: 0.1rem;
+  background-color: var(--background-color-1);
+}
+
+.bestpricecontainer div:last-child,
+.appliancetwogrid,
+.storedeals div:last-child,
+.appliances div:last-child,
+.unilever div:last-child,
+.tecnoofficial div:last-child,
+.stockcontainer div:last-child,
+.subcategory,
+.phone,
+.phone1container,
+.topappliance div:last-child,
+.toppower div:last-child {
+  background-color: var(--background-color-1);
+  border-radius: 0.2rem;
+}
+
+.subcategory img,
+.collection img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+}
+
+.phone img,
+.subcategory img,
+.power img,
+.groceries img,
+.mainstore img,
+.healthcontainer img,
+.appliancetwogrid img {
+  width: 85%;
+  height: 85%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  margin-block-end: 0.2rem;
+}
+
+.collections img,
+.morecollection img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  border-top-left-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+}
+
+.tvheading {
+  background-color: rgb(107, 187, 240);
+  color: black;
+}
+
+.powergrid {
+  border-radius: 0.2rem;
+  background-color: var(--background-color-1);
+}
+
+
+.collections h2,
+.appliancetwo h2,
+.phonecollection h2,
+.topappliance > div:first-child,
+.morecollections h2,
+.mainofficial h2,
+.tecnoofficial > div:first-child,
+.unilever > div:first-child,
+.toppower > div:first-child,
+.slidertwo h2,
+.powerup h2,
+.biggroceries > div:first-child,
+.bestpricecontainer > div:first-child,
+.phonedeals > div:first-child {
+  padding: 0.4rem;
+  background-color: rgb(170, 210, 236);
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.slidertwo h2{ 
+  margin-bottom: -3rem;
+}
+
+.phonedeals > div:first-child {
+  margin-block-start: 1.5rem;
+  background-color: rgb(254, 226, 204);
+}
+
+.phonecollection h2,
+.healthcontainer h2 {
+  background-color: rgb(254, 226, 204);
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.phonedealsheading {
+  color: black;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .subcategory img,
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .phone img,
+  .subcategory img,
+  .power img,
+  .groceries img,
+  .mainstore img,
+  .healthcontainer img,
+  .appliancetwogrid img {
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+  }
+  
+  .collections img,
+  .morecollection img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
+}
