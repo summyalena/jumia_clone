@@ -15,7 +15,7 @@ function Mainofficialstore() {
       <h2 className='flex center'>Official Stores</h2>
       <Gridtemplate className={styles.mainstore}>
       { mainofficialstores.map((main)=> (
-             <Image src={main.image} alt={main.name}/>
+             <Image key={main.id} src={main.image} alt={main.name}/>
         ))
       }
       </Gridtemplate>

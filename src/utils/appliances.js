@@ -100,12 +100,12 @@ export const appliancestwo = [
 ];
 
 export const topappliances = [
-  { id: 1, name: "", image: image13, price: "#50,000", slashedprice: "" },
-  { id: 1, name: "", image: image14, price: "#50,000", slashedprice: "" },
-  { id: 1, name: "", image: image15, price: "#50,000", slashedprice: "" },
-  { id: 1, name: "", image: image16, price: "#50,000", slashedprice: "" },
-  { id: 1, name: "", image: image17, price: "#50,000", slashedprice: "" },
-  { id: 1, name: "", image: image18, price: "#50,000", slashedprice: "" },
+  { id: 1, text: "appliance", image: image13, price: "#50,000", slashedprice: "" },
+  { id: 2, text: "appliance", image: image14, price: "#50,000", slashedprice: "" },
+  { id: 3, text: "appliance", image: image15, price: "#50,000", slashedprice: "" },
+  { id: 4, text: "appliance", image: image16, price: "#50,000", slashedprice: "" },
+  { id: 5, text: "appliance", image: image17, price: "#50,000", slashedprice: "" },
+  { id: 6, text: "appliance", image: image18, price: "#50,000", slashedprice: "" },
 ];
 
 export default Appliances;

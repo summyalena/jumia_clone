@@ -9,37 +9,37 @@ import image6 from '../../public/assets/images/orijinbitters.jpg';
 const bigsavingsgrocery = [
   {
     id: 1,
-    name: 'Imperial Blue Whisky...',
+    text: 'Imperial Blue Whisky...',
     image: image1,
     price: '#2400'
   },
   {
     id: 2,
-    name: 'Nestle Golden Morn ke..',
+    text: 'Nestle Golden Morn ke..',
     image: image2,
     price: '#2400'
   },
   {
     id: 3,
-    name: 'DUSSE VSOP Cognac 75cl...',
+    text: 'DUSSE VSOP Cognac 75cl...',
     image: image3,
     price: '#2400'
   },
   {
     id: 4,
-    name: 'Sunlight 2 in 1 tropical S...',
+    text: 'Sunlight 2 in 1 tropical S...',
     image: image4,
     price: '#2400'
   },
   {
     id: 5,
-    name: 'Ayoola Foods Cassava Fu...',
+    text: 'Ayoola Foods Cassava Fu...',
     image: image5,
     price: '#2400'
   },
   {
     id: 6,
-    name: 'Orijin Bitters 20cl x24',
+    text: 'Orijin Bitters 20cl x24',
     image: image6,
     price: '#2400'
   },

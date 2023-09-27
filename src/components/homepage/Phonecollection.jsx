@@ -17,8 +17,8 @@ function Phonecollection() {
       <h2 className='flex center'>Phones Super Sale</h2>
       <Gridtemplate className={styles.phone}>
         {phonesuper.map((phone)=> (
-          <div className={`${styles.phone}`}>
-            <Image src={phone.image} alt={phone.name}/>
+          <div key={phone.id} className={`${styles.phone}`}>
+            <Image src={phone.image} alt={phone.text}/>
             {/* <p>{phone.name}</p> */}
           </div>
         ))}

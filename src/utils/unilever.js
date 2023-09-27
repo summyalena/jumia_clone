@@ -9,32 +9,32 @@ import image6 from '../../public/assets/images/sunlightsmall.jpg';
 const unilever = [
   {
     id: 1,
-    name: "Knorr Chicken Seasoning... ",
+    text: "Knorr Chicken Seasoning... ",
     image: image1,
   },
   {
     id: 2,
-    name: "Sunlight 2 in 1 Tropical...",
+    text: "Sunlight 2 in 1 Tropical...",
     image: image2,
   },
   {
     id: 3,
-    name: "Sunlight 2 in 1 Sun...",
+    text: "Sunlight 2 in 1 Sun...",
     image: image3,
   },
   {
     id: 4,
-    name: "Closeup Complete Fresh...",
+    text: "Closeup Complete Fresh...",
     image: image4,
   },
   {
     id: 5,
-    name: "Sunlight detergent Pow...",
+    text: "Sunlight detergent Pow...",
     image: image5,
   },
   {
     id: 6,
-    name: "Sunlight 2 in 1 Sunshine...",
+    text: "Sunlight 2 in 1 Sunshine...",
     image: image6,
   },
 ];

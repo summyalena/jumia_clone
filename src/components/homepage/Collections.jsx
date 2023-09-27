@@ -12,8 +12,8 @@ function Collections() {
       <h2 className='flex center '>Shop our Collections</h2>
       <Gridtemplate className={` ${styles.collectiongrid}`}>
         {collections.map((collection) => (
-          <div className={styles.collection}>
-            <Image src={collection.image} alt={collection.text}/>
+          <div key={collection.id} className={styles.collection}>
+            <Image src={collection.image} alt={collection.name}/>
             <p>{collection.text}</p>
           </div>
         ))}

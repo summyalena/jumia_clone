@@ -15,26 +15,32 @@ import image12 from '../../public/assets/images/beautydeals.png';
 const Collections = [
   {
     id: 1,
+    name: 'collection',
     image: image7
   },
   {
     id: 2,
+    name: 'collection',
     image: image8
   },
   {
     id: 3,
+    name: 'collection',
     image: image9
   },
   {
     id: 4,
+    name: 'collection',
     image: image10
   },
   {
     id: 5,
+    name: 'collection',
     image: image11
   },
   {
     id: 6,
+    name: 'collection',
     image: image12
   }
 ]

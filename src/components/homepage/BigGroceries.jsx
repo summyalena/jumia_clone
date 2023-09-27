@@ -16,7 +16,7 @@ function BigGroceries() {
       <Gridtemplate className={styles.groceries}>
         {
           biggroceries.map((grocery)=> (
-            <div className={styles.grocery}>
+            <div  key={grocery.id} className={styles.grocery}>
               <Image src={grocery.image} alt={grocery.text}/>
             </div>
           ))

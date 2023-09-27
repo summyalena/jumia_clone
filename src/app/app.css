@@ -76,6 +76,7 @@
 
 .mySwiper {
   position: relative;
+  width: 100%;
   top: 0;
   right: 0;
   background-color: var(--background-color);
@@ -87,6 +88,9 @@
   transition-delay: 3s;
  }
  
+ .swiper-slide {
+  width: 100%;
+ }
 
 .next {
   position: absolute;

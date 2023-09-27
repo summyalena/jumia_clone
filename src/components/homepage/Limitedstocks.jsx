@@ -24,7 +24,7 @@ function Limitedstocks() {
     
     <div className={`${styles.grid}`}>
         {subcategories.map((category)=> (
-          <div className={`flex flex-col center ${styles.subcategory}`}>
+          <div key={category.id} className={`flex flex-col center ${styles.subcategory}`}>
             <Image src={category.image} alt={category.text}/>
             <p>{category.text}</p>
           </div>

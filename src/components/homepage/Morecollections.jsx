@@ -15,7 +15,7 @@ function Morecollections() {
       </h2>
       <Gridtemplate>
        {morecollections.map((collection)=> (
-        <div className={`flex flex-col center gap-sm ${styles.morecollection}`}>
+        <div key={collection.id} className={`flex flex-col center gap-sm ${styles.morecollection}`}>
           <Image src={collection.image} alt={collection.name}/>
            <p>{collection.name}</p>
         </div>

@@ -14,8 +14,8 @@ function Appliancestwo() {
       <h2 className='flex center'>Appliances</h2>
       <Gridtemplate className={` ${styles.appliancetwogrid}`}>
         {appliancestwo.map((appliance) => (
-          <div className={styles.appliance}>
-            <Image src={appliance.image} alt={appliance.text}/>
+          <div key={appliance.id} className={styles.appliance}>
+            <Image src={appliance.image} alt={appliance.name}/>
             <p>{appliance.text}</p>
           </div>
         ))}

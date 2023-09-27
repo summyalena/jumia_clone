@@ -47,7 +47,7 @@ function Carousel({data}) {
           {data.map((el) => (
             <SwiperSlide key={el.id}>
               <Card className={styles.slidecard}>
-                <Image src={el.image} alt={el.name} />
+                <Image src={el.image} alt={el.text} />
                 <p>{el.text}</p>
                 <span>{el.price}</span>
                 <span>{el.slashed}</span>

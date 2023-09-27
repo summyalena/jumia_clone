@@ -16,7 +16,7 @@ function OfficialStoredeals() {
       heading='Official Store Deals | Authenticity Guaranteed'
        para='See all'
        className={styles.seeheading}/>
-     <Carousel
+     <Carousel 
      data={officialstoredeals}
      />
     </Container>

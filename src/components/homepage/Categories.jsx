@@ -11,7 +11,7 @@ function Categories() {
     <Container>
       <div className={`full-width grid gap-sm ${styles.catgoriescontainer}`}>
         {categories.map((category) => (
-          <div className={`flex center flex-col ${styles.category}`}>
+          <div key={category.id} className={`flex center flex-col ${styles.category}`}>
             <Image src={category.image} alt={category.name}/>
             <h2>{category.name}</h2>
           </div>

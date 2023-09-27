@@ -50,9 +50,9 @@ function PhoneRows() {
           className="mySwiper"
         >
           {phonerows.map((phones) => (
-            <SwiperSlide key={phones.id}>
-              <Card className={styles.slidecard}>
-                <Image src={phones.image} alt={phones.name} />
+            <SwiperSlide>
+              <Card key={phones.id} className={styles.slidecard}>
+                <Image src={phones.image} alt={phones.text} />
                 <span>{phones.text}</span>
                 <span>{phones.price}</span>
                 <span>{phones.slashed}</span>
