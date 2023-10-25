@@ -1,26 +1,24 @@
-.slider {
-  width: 80%;
+.container {
+  display: grid;
+  grid-template-columns: 0.6fr 2fr 0.8fr;
+  width: 100%;
+  gap: 12px;
+  justify-content: start;
+  align-items: start;
 }
 
 .phone1container {
   background-color: var(--background-color);
 }
 
-.slidecard > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .links > ul {
-  background-color: var(--background-color);
-  padding: 3rem;
+  background-color: var(--background-color-1);
   box-shadow: 0.2px 0.2px 0.9px 0px rgba(0, 0, 0, 0.3);
+  padding-left: 3rem;
+  padding-block: 3rem;
+  border-radius: 1rem;
 }
 
-.herocontainer {
-  justify-content: space-evenly;
-}
 
 .catgoriescontainer {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -49,6 +47,12 @@
 
 .heading h2 {
   font-size: 1rem;
+}
+
+.container > div:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .stockcontainer {
@@ -113,8 +117,8 @@
 .mainstore img,
 .healthcontainer img,
 .appliancetwogrid img {
-  width: 85%;
-  height: 85%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
   border-radius: 0.5rem;
   margin-block-end: 0.2rem;
@@ -139,7 +143,6 @@
   background-color: var(--background-color-1);
 }
 
-
 .collections h2,
 .appliancetwo h2,
 .phonecollection h2,
@@ -160,7 +163,7 @@
   border-top-left-radius: 0.5rem;
 }
 
-.slidertwo h2{ 
+.slidertwo h2 {
   margin-bottom: -3rem;
 }
 
@@ -180,17 +183,27 @@
   color: black;
 }
 
-
+@media (min-width: 567px) and (max-width: 980px) {
+  .phone img,
+  .subcategory img,
+  .power img,
+  .groceries img,
+  .mainstore img,
+  .healthcontainer img,
+  .appliancetwogrid img {
+    width: 95%;
+    height: 85%;
+  }
+}
 
 @media (min-width: 768px) {
-
   .subcategory img,
   .collection img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  
+
   .phone img,
   .subcategory img,
   .power img,
@@ -202,7 +215,7 @@
     height: 95%;
     object-fit: contain;
   }
-  
+
   .collections img,
   .morecollection img {
     width: 90%;

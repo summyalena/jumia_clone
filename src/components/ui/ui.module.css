@@ -2,6 +2,11 @@
   padding: 1rem;
 }
 
+.slidecontainer {
+  height: 100%;
+  width: 100%;
+}
+
 .phone1container{
   background-color: var(--background-color);
 }
@@ -14,15 +19,13 @@
 
 .slider {
   position: relative;
-  height: 70dvh;
-  width: 100%;
+  height: 100%;
 }
 
 .slider div {
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: contain;
   display: block;
   opacity: 0;
   transition: opacity 3s ease-in-out;
@@ -31,10 +34,8 @@
 }
 
 .imgg {
-  display: flex;
   width: 100%;
   height: 100%;
-  object-fit: contain;
 }
 
 .slider div.slideactive {

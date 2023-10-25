@@ -43,7 +43,6 @@ function Slider({ data }) {
   return ( 
     <>
     { width < 768 ? ( 
-    <>
       <Swiper 
           modules={[Navigation, A11y]}
           navigation={{
@@ -63,6 +62,7 @@ function Slider({ data }) {
                slidesPerView: 3
             }
           }}
+          autoHeight
           spaceBetween={20}
           className="mySwiper">
             {herosectionSlider.map((el)=> (
@@ -73,11 +73,10 @@ function Slider({ data }) {
               </SwiperSlide>
             ))}
            </Swiper>
-           </> 
            ):
            (
             <>
-              <div className={`full-width flex center ${styles.slidecontainer}`}>
+          <div className={`full-width flex center ${styles.slidecontainer}`}>
           <div className={`full-width  ${styles.slider}`}>
             {data.map(
               (el) =>

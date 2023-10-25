@@ -17,6 +17,10 @@
   display: grid;
 }
 
+.gap-xlg {
+  gap: 5rem;
+}
+
 .gap-lg {
   gap: 2rem;
 }
@@ -81,7 +85,6 @@
   right: 0;
   background-color: var(--background-color);
 }
-
 
 .mySwiper:hover {
   opacity: 1;

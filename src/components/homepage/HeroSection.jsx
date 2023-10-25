@@ -16,6 +16,8 @@ import useGetWindowSize from '../hooks/useGetWindowSize';
 
 function HeroSection() {
   const {width} = useGetWindowSize();
+  
+  console.log(width);
 
   const links = [
     { id: 1, name: "supermarket", link: "/supermarket" },
@@ -31,9 +33,9 @@ function HeroSection() {
   ];
 
   return (
-    <Container className={`flex center gap-sm ${styles.herocontainer}`}>
-      {width > 768 ?  
-      <>
+    <Container className={`${styles.herocontainer}`}>
+      {width > 948 ?  
+      <div className={styles.container}>
       <div className={styles.links}>
         <ul className='flex flex-col gap-sm '>
           {links.map((link) => (
@@ -43,18 +45,17 @@ function HeroSection() {
           ))}
         </ul>
       </div>
-      <div className={`${styles.slider}`}>
         <Slider 
         data={herosectionSlider}/>
-      </div>
-      <div className="flex flex-col gap-sm">
+      <div className="flex center flex-col gap-xlg">
         <Image src={image1} alt="gif_of_beta_Products" />
         <Image src={image2} alt="picture_of_Jumia force" />
       </div>
-      </> : 
-           <div>
+      </div> : 
+           <>
           <Slider data={herosectionSlider}/>
-          </div> }
+          </> 
+          }
      
     </Container>
   );

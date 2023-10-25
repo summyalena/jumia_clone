@@ -1,3 +1,5 @@
+import styles from './page.module.css'
+
 import HeroSection from '@/components/homepage/HeroSection'
 import TabHeading from '@/components/ui/TabHeading'
 import Categories from '@/components/homepage/Categories'
@@ -23,7 +25,7 @@ import Health from '@/components/homepage/Health'
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.main}>
       <HeroSection/>
       <TabHeading/>
       <Categories/>
@@ -46,6 +48,6 @@ export default function Home() {
       <BigGroceries/>
       <Bigsavinggroceries/>
       <Health/>
-     </>
+     </div>
   )
 }

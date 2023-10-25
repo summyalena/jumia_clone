@@ -8,7 +8,6 @@ import styles from './homepage.module.css';
 function Slidertwo() {
   return (
     <Container className={styles.slidertwo}>
-       <h2 className='flex center'>Official Store</h2>
        <Slider
        data={slidertwo}
        />

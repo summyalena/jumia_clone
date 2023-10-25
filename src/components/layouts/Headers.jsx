@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from 'next/link';
 
 import { MdStars, MdOutlineHelpOutline } from "react-icons/md";
+import { AiOutlineClose } from 'react-icons/ai'
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { RxAvatar } from "react-icons/rx";
 import { BsCart3 } from "react-icons/bs";
@@ -19,28 +20,23 @@ function Headers() {
   const [openMenu, setOpenMenu] = useState(false);
 
   const handleOpenMenu = () => {
-    setOpenMenu(!openMenu);
+    setOpenMenu(true);
   };
+
+  const handleCloseMenu = () => {
+    setOpenMenu(false);
+  }
   const { width } = useGetWindowSize();
 
   return (
     <>
       <Container>
-        {width > 998 ? (
+        {width > 898 ? (
           <>
             <MiniHeader />
             <nav
               className={`full-width flex align-y padding-sm-all ${styles.navbar}`}
             >
-              <button
-                onClick={handleOpenMenu}
-                type="button"
-                className={`flex flex-col center ${styles.hamburger}`}
-              >
-                <span />
-                <span />
-                <span />
-              </button>
               <h2 className="flex center">
                 Jumia
                 <MdStars className={styles.stars} />
@@ -92,7 +88,10 @@ function Headers() {
                   <BsCart3 />
                 </li>
               </ul>
-              <div className={`flex flex-col align-x ${styles.navlists} ${openMenu ? styles.mobile : ''}`}>
+              <div className={`flex flex-col ${styles.navlists} ${openMenu && styles.mobile}`}>
+                <button onClick={handleCloseMenu}>
+                  <AiOutlineClose/>
+                </button>
                 <ul>
                 {navlist.map((nav)=> (
                   <li key={nav.id}><Link href={nav.link}>{nav.name}</Link></li>
@@ -100,12 +99,12 @@ function Headers() {
                 </ul>
                 <ul>
                   {categorylist.map((list)=> (
-                    <li><Link href={list.link}>{list.name}</Link></li>
+                    <li key={list.id}><Link href={list.link}>{list.name}</Link></li>
                   ))}
                 </ul>
                 <ul>
                   {serviceslist.map((el)=> (
-                    <li><Link href={el.link}>{el.name}</Link></li>
+                    <li key={el.id}><Link href={el.link}>{el.name}</Link></li>
                   ))}
                 </ul>
                 <ul>
